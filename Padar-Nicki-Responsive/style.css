@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+#caption {
+    text-align: center;
+}
+
+#main {
+    background-color: black;
+}
+
+#nav a {
+    color: black;
+}
+
+.responsive {
+    max-width: 100%;
+}
+
+.column {
+    float: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#lemonade {
+    background-image: url(lemonade.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#beyonce {
+    background-image: url(beyonce.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#four {
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#sasha {
+    background-image: url(sasha.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#bday {
+    background-image: url(bday.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#dangerously {
+    background-image: url(dangerously.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#formation {
+    background-image: url(formation-tour.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+#on-the-run {
+    background-image: url(on-the-run-tour.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#carter {
+    background-image: url(mrs-carter-tour.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#icon {
+    color: #F5CEE2;
+}
+
+#icon:hover {
+    color: white;
+}
+
+#footer {
+    background-color: black;
+}
+
+
+/*LARGE DESKTOP*/
+
+@media screen and (min-width: 955px) {
+    body {
+        font-family: "Helvetica";
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+    
+    #fonts {
+        opacity: 0;
+    }
+    
+    #nav {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(banner.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 55px;
+    }
+    
+    nav a {
+        padding-right: 30px;
+        padding-left: 30px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .col-4 {
+        width: 33.3333%;
+    }
+    .col-4b {
+        width: 33.3333%;
+    }
+    .height {
+        height: 400px;
+    }
+  
+    #title:hover,
+    #tracks:hover,
+    #dates:hover,
+    #tickets:hover {
+        text-decoration: underline;
+        font-size: 1.05em;
+    }
+    #caption {
+        color: white;
+        opacity: 0;
+        position: relative;
+        height: 400px;
+        width: 100%;
+        padding-top: 160px;
+        background-color: rgba(0, 0, 0, .6);
+    }
+    
+    #caption:hover {
+        opacity: 1;
+    }
+    
+    #tours {
+        margin-top: 100px;
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 3em;
+        margin: 0;
+        padding: 25px;
+    }
+    
+    @keyframes icon-size {
+        0% {
+            font-size: 1em;
+        }
+        
+        50% {
+            font-size: 1.2em;
+        }
+        
+        100% {
+            font-size: 1em;
+        }
+    }
+    
+    ul li{ 
+        animation: icon-size 5s;
+        animation-iteration-count: infinite; 
+    }
+}
+
+
+/*MEDIUM TABLET*/
+
+@media screen and (min-width: 450px) and (max-width: 955px) {
+    .col-4 {
+        width: 50%;
+    }
+    .col-4b {
+        width: 100%;
+    }
+    .height {
+        height: 300px;
+    }
+    #fonts {
+        opacity: 0;
+    }
+    body {
+        font-family: "Helvetica";
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+    #nav {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(banner.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    nav a {
+        padding-right: 30px;
+        padding-left: 30px;
+        text-decoration: none;
+        color: black;
+    }
+    #albums {
+        margin-top: 35px;
+    }
+    #caption {
+        color: white;
+        text-decoration: underline;
+        opacity: 1;
+        position: relative;
+        height: 300px;
+        width: 100%;
+        padding-top: 110px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    #tours {
+        margin-top: 80px;
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 4em;
+        margin: 0;
+        padding: 25px;
+    }
+}
+
+
+/*SMALL PHONE*/
+
+@media screen and (max-width: 480px) {
+    .col-4 {
+        width: 100%;
+    }
+    
+    .col-4b {
+        width: 100%;
+    }
+    
+    .height {
+        height: 200px;
+    }
+    
+    #fonts {
+        font-size: 2.5em;
+        opacity: 1;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    
+    #fonts:hover {
+        color: darkgray;
+    }
+    
+    body {
+        font-family: "Helvetica";
+        font-size: 0.9em;
+        text-transform: uppercase;
+    }
+    
+    #nav {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(banner.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    
+    nav a {
+        opacity: 0;
+        padding-right: 30px;
+        padding-left: 30px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #albums {
+        margin-top: 15px;
+    }
+    
+    #caption {
+        color: white;
+        text-decoration: underline;
+        opacity: 1;
+        position: relative;
+        height: 200px;
+        width: 100%;
+        padding-top: 60px;
+        background-color: rgba(0, 0, 0, .45);
+    }
+    #tours {
+        margin-top: 100px;
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 5em;
+        margin: 0;
+        padding: 55px;
+    }
