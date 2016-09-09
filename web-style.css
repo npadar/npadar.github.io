@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+nav a{
+	text-decoration: none;
+	font-family: "Helvetica";
+    font-weight: lighter;
+    text-transform: uppercase;
+	font-size: 1em;
+	color: gray;
+	padding: 15px;
+}
+
+nav a:hover {
+    font-weight: normal;
+    font-size: 1.05em;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+img {
+    width: 50%;
+    margin: 55px;
+}
+
+#main {
+    font-family: "Helvetica";
+    font-weight: normal;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.project {
+    padding: 25px;
+    margin-top: 35px;
+}
+
+.project img:hover {
+    opacity: 0.7;
+}
+
+#description {
+    font-weight: lighter;
+}
+
+#languages {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: .7em;
+}
