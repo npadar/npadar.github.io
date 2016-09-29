@@ -2,47 +2,45 @@
     box-sizing: border-box;
 }
 
-#body {
-    background-image: url(graphic-background.jpg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-}
-
-nav a {
-    text-decoration: none;
-    font-family: "Bebas Neue";
+body {
+    font-family: "Helvetica";
     font-weight: lighter;
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #6096c2;
-    padding: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(240, 240, 240, 1);
 }
 
-nav {
+#nav {
     text-align: center;
+    position: relative;
+    top: -200px;
 }
 
-.responsive {
-    max-width: 100%;
-    max-height: 100%;
+#nav a {
+    color: darkgray;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 0.5px;
 }
 
-nav a:hover {
-    font-size: 2.3em;
+#nav a:hover {
+    text-decoration: line-through;
 }
 
 #name {
-    font-size: 5em;
-    text-transform: uppercase;
-    font-family: "Bebas Neue";
-    padding: 25px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    color: #6073c2;
-    letter-spacing: 1px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: lighter;
+    text-transform: lowercase;
+    letter-spacing: -2px;
 }
 
 @media screen and (max-width: 570px) {

@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica";
+    font-weight: lighter;
+    font-size: 1em;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(247, 247, 247, 1);
+}
+
+#nav a {
+    color: darkgray;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 10px;
+    letter-spacing: 0.5px;
+}
+
+#nav a:hover {
+    text-decoration: line-through;
+}
+
+#nav {
+    text-align: right;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+#languages {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#logistics,
+#intro,
+#mockups,
+#wireframes,
+#final {
+    margin-bottom: 70px;
+}
+
+#project {
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+#title {
+    font-weight: bold;
+    color: darkgray;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+
+#logistics img:hover {
+    opacity: 0.8;
+}
+
+#wireframes #image,
+#mockups #image {
+    padding: 20px;
+}
+
+#image-process {
+    padding: 5px;
+}
+
+.image-gallery {
+    margin-bottom: 30px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.links:hover {
+    color: darkgray;
+}
+
+.responsive {
+    max-width: 100%;
+}
+
+#wire {
+    display: flex;
+    justify-content: center;
+}
+
+#mock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    float: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-3 {
+    width: 35%;
+}
+
+.col-5 {
+    width: 50%;
+}

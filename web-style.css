@@ -2,59 +2,57 @@
     box-sizing: border-box;
 }
 
-nav a {
-    text-decoration: none;
-    font-family: "Bebas Neue";
-    font-weight: lighter;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    color: #6096c2;
-    padding: 15px;
-}
-
-nav a:hover {
-    font-weight: normal;
-    font-size: 1.7em;
-}
-
-nav {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-img {
-    width: 50%;
-    margin: 55px;
-}
-
-#main {
+body {
     font-family: "Helvetica";
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 1em;
-    text-align: center;
-    margin-top: 45px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(240, 240, 240, 1);
 }
 
-.project {
-    padding: 25px;
+#nav a {
+    color: darkgray;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 10px;
+    letter-spacing: 0.5px;
+}
+
+#nav a:hover {
+    text-decoration: line-through;
+}
+
+#nav {
+    text-align: right;
     margin-top: 35px;
+    margin-bottom: 25px;
 }
 
-.project img:hover {
+#projects img:hover {
     opacity: 0.7;
 }
 
-#description {
-    font-weight: lighter;
+#projects {
+    margin-top: 100px;
 }
 
-#languages {
-    font-style: italic;
-    font-weight: lighter;
-    font-size: .7em;
+#project {
+    padding: 15px;
+}
+
+.col-3 {
+    width: 33%;
+}
+
+.column {
+    float: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
