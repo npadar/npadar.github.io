@@ -38,8 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    font-weight: lighter;
-    text-transform: lowercase;
+    font-weight: bold;
     letter-spacing: -2px;
 }
 
