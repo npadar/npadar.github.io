@@ -32,6 +32,6 @@ body {
     text-decoration: line-through;
 }
 
-#resume {
-    text-align: center;
+.responsive {
+    max-width: 100%;
 }
