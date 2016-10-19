@@ -70,6 +70,12 @@ body {
     padding: 10px;
 }
 
+#image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #image-gallery {
     margin-bottom: 30px;
 }
