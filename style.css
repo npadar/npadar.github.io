@@ -9,6 +9,12 @@
     float: left;
 }
 
+video {
+    width: 100%;
+    height: auto;
+    color:gray;
+}
+
 .left-image {
     margin-right: 3%;
 }
