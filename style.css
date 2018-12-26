@@ -10,13 +10,17 @@
 
 body {
     font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-    background-color: #FCFCFC;
+    background-color: white;
+    margin: 0;
 
 }
 
-#wix a {
-    color: black;
-    text-decoration: none;
+.underline {
+    background-image: linear-gradient(120deg, #689EDD, #689EDD);
+    background-repeat: no-repeat;
+    background-size: 100% 0.15em;
+    background-position: 0 100%;
+    display: inline;
 }
 
 footer {
@@ -34,6 +38,11 @@ footer {
     margin-top: 3%;
     left: 0;
     right: 0;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 19px;
 }
 
 hr {
@@ -54,67 +63,72 @@ video {
     padding-bottom: 20px;
 }
 
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    margin: 0px;
+    padding-top: 10px;
+}
 
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-bottom: 5px;
+    width: 80%;
+}
 
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-left: 20%;
+    width: 80%;
+    margin-top: 0;
+}
+
+h6 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #4A90E2;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+#details li,
+#process li {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+
+}
 
 /*desktop*/
 @media screen and (min-width:1043px) {
-    h1 {
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 35px;
-        margin: 0px;
-        padding-top: 10px;
-    }
-
-    h2 {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
-        margin-top: 15px;
-        margin-left: 20%;
-        margin-bottom: 5px;
-        width: 80%;
-    }
-
-    h3 {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 19px;
-        margin-top: 10px;
-    }
-
-    h4 {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 19px;
-        margin-left: 20%;
-        width: 80%;
-        margin-top: 0;
-    }
-
-    h6 {
-        font-size: 11px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        color: #4A90E2;
-        margin-bottom: 0px;
-    }
-
-    p {
-        font-size: 12px;
-        line-height: 19px;
-        font-weight: 400;
-    }
-
     .margin-left {
-        margin-left: 15%;
-
+        margin-left: 18%;
     }
 
     .margin-right {
-        margin-right: 15%;
+        margin-right: 18%;
     }
 
     .intro-left {
@@ -128,8 +142,13 @@ video {
         margin-top: 20px;
     }
 
+    .home-left {
+        float: left;
+        width: 70%;
+    }
+
     #intro {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .two-column-image {
@@ -216,7 +235,8 @@ video {
 
     .column {
         float: left;
-        width: 20%;
+        width: 25%;
+        padding-right: 15px;
     }
 
 
@@ -257,22 +277,23 @@ video {
         margin-right: 50px;
     }
 
+    #process {
+        width: 64%;
+    }
+
     ul {
         padding-left: 0;
         margin-top: 10px;
         margin-bottom: 30px;
     }
 
-    #details li {
-        list-style-type: none;
-        font-size: 12px;
-        line-height: 19px;
-        font-weight: 400;
 
-    }
 
     #details {
-        padding-right: 70px;
+        background-color: #f7f7f7;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .navigation a {
@@ -281,7 +302,7 @@ video {
     }
 
     .navigation a:hover {
-        color: #636363;
+        color: #4A90E2;
     }
 
     .navigation li {
@@ -325,7 +346,7 @@ video {
     }
 
     .logo:hover {
-        color: #636363;
+        color: #4A90E2;
     }
 
     #main {
@@ -352,56 +373,6 @@ video {
 
 /* tablet */
 @media screen and (min-width: 764px) and (max-width: 1042px) {
-    h1 {
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 35px;
-        margin: 0px;
-        padding-top: 10px;
-    }
-
-    h2 {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
-        margin-top: 0;
-        margin-bottom: 15px;
-        margin-left: 20%;
-        width: 80%;
-        margin-bottom: 5px;
-
-    }
-
-    h3 {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 19px;
-        margin-top: 10px;
-    }
-
-    h4 {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 19px;
-        margin-top: 0px;
-        margin-left: 20%;
-        width: 80%;
-    }
-
-    h6 {
-        font-size: 11px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        color: #4A90E2;
-        margin-bottom: 0px;
-    }
-
-    p {
-        font-size: 12px;
-        line-height: 19px;
-        font-weight: 400;
-    }
 
     .margin-left {
         margin-left: 5%;
@@ -511,7 +482,8 @@ video {
 
     .column {
         float: left;
-        width: 20%;
+        width: 23%;
+        padding-right: 15px;
     }
 
     /* Clear floats after the columns */
@@ -539,16 +511,11 @@ video {
         margin-bottom: 30px;
     }
 
-    #details li {
-        list-style-type: none;
-        font-size: 12px;
-        line-height: 19px;
-        font-weight: 400;
-
-    }
-
     #details {
-        padding-right: 70px;
+        background-color: #f7f7f7;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .navigation a {
@@ -614,56 +581,10 @@ video {
         margin-left: auto;
         margin-right: auto;
     }
-
 }
 
 /*small tablet*/
 @media screen and (min-width: 610px) and (max-width: 763px) {
-    h1 {
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 35px;
-        margin: 0px;
-        padding-top: 10px;
-    }
-
-    h2 {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
-        margin-top: 0;
-        margin-bottom: 10px;
-
-    }
-
-    h3 {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 19px;
-        margin-top: 10px;
-    }
-
-    h4 {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 19px;
-        margin-top: 10px;
-    }
-
-    h6 {
-        font-size: 11px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        color: #4A90E2;
-        margin-bottom: 0px;
-    }
-
-    p {
-        font-size: 12px;
-        line-height: 19px;
-        font-weight: 400;
-    }
 
     .margin-left {
         margin-left: 5%;
@@ -742,7 +663,7 @@ video {
 
     .column {
         float: left;
-        width: 20%;
+        width: 100%;
     }
 
     /* Clear floats after the columns */
@@ -770,16 +691,11 @@ video {
         margin-bottom: 30px;
     }
 
-    #details li {
-        list-style-type: none;
-        font-size: 12px;
-        line-height: 19px;
-        font-weight: 400;
-
-    }
-
     #details {
-        padding-right: 0px;
+        background-color: #f7f7f7;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .navigation a {
@@ -850,51 +766,6 @@ video {
 
 /* mobile */
 @media screen and (max-width: 609px) {
-    h1 {
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 35px;
-        margin: 0px;
-        padding-top: 10px;
-    }
-
-    h2 {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
-        margin-top: 0;
-        margin-bottom: 10px;
-
-    }
-
-    h3 {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 19px;
-        margin-top: 10px;
-    }
-
-    h4 {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 19px;
-        margin-top: 10px;
-    }
-
-    h6 {
-        font-size: 11px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        color: #4A90E2;
-        margin-bottom: 0px;
-    }
-
-    p {
-        font-size: 12px;
-        line-height: 19px;
-        font-weight: 400;
-    }
 
     .margin-left {
         margin-left: 5%;
@@ -903,7 +774,6 @@ video {
     .margin-right {
         margin-right: 5%;
     }
-
 
     #info {
         margin-right: 10%;
@@ -914,32 +784,32 @@ video {
     }
 
     #intro {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .two-column-image {
-        width: 100%;
+        width: 49%;
         margin-bottom: 15px;
     }
 
     .three-column-image {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 32%;
+        margin-bottom: 50px;
     }
 
     .four-column-image {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 24%;
+        margin-bottom: 50px;
     }
 
     .one-column-image {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
     }
 
     .button {
         background-color: white;
-        width: 50%;
+        width: 30%;
         text-align: center;
         padding: 20px;
         margin-top: 20px;
@@ -974,7 +844,7 @@ video {
 
     .column {
         float: left;
-        width: 20%;
+        width: 100%;
     }
 
     /* Clear floats after the columns */
@@ -1002,16 +872,11 @@ video {
         margin-bottom: 30px;
     }
 
-    #details li {
-        list-style-type: none;
-        font-size: 12px;
-        line-height: 19px;
-        font-weight: 400;
-
-    }
-
     #details {
-        padding-right: 0px;
+        background-color: #f7f7f7;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .navigation a {
@@ -1053,7 +918,7 @@ video {
         text-decoration: none;
         font-weight: 600;
         font-size: 18px;
-        padding: 10px;
+        padding: 5px;
         line-height: 2;
     }
 
