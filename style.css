@@ -408,7 +408,7 @@ p {
     }
 
     .four-column-image {
-        width: 24%;
+        width: 49%;
         margin-bottom: 50px;
     }
 
@@ -617,7 +617,7 @@ p {
     }
 
     .four-column-image {
-        width: 24%;
+        width: 49%;
         margin-bottom: 50px;
     }
 
@@ -798,8 +798,8 @@ p {
     }
 
     .four-column-image {
-        width: 24%;
-        margin-bottom: 50px;
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .one-column-image {
