@@ -172,20 +172,22 @@ p {
     }
 
     .left-image {
-        width: 33%;
+        width: 50%;
         float: left;
         padding-right: 1%;
     }
 
+    /*
     .middle-image {
         width: 33%;
         float: left;
         padding-left: .5%;
         padding-right: .5%;
     }
+*/
 
     .right-image {
-        width: 33%;
+        width: 50%;
         float: left;
         padding-left: 1%;
     }
@@ -419,20 +421,13 @@ p {
 
 
     .left-image {
-        width: 33%;
+        width: 50%;
         float: left;
         padding-right: 1%;
     }
 
-    .middle-image {
-        width: 33%;
-        float: left;
-        padding-left: .5%;
-        padding-right: .5%;
-    }
-
     .right-image {
-        width: 33%;
+        width: 50%;
         float: left;
         padding-left: 1%;
     }
