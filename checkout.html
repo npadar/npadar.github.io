@@ -16,29 +16,25 @@
             <a class="logo" href="index.html">Nicki Padar</a>
             <nav class="navigation" role="navigation">
                 <ul>
-                    <li><a href="index.html">Projects</a></li>
-                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="index.html">Design</a></li>
+                    <li><a href="photos.html">Photography</a></li>
                     <li><a href="Nicki-Padar-resume.pdf" target="_blank">Resume</a></li>
                 </ul>
             </nav>
         </header>
     </section>
 
-    <section id="main">
-        <section id="intro" class="margin-left margin-right row">
-            <div class="intro-left">
+    <section id="main" class="margin-left margin-right">
+        <section id="intro" class="row">
+            <div>
                 <h6>UX Design</h6>
                 <h1> Checkout Flow </h1>
-                <p> As more users rely on their mobile device to access the web, it is important that Udacity's checkout flow provides customers with a simplified, convenient and secure experience. I redesigned Udacity's current checkout experience to try and solve business and user needs. </p>
+                <p> Improving the user experience when purchasing a Nanodegree Program. </p>
             </div>
-            <div class="intro-right">
-                <img src="hero-images/checkout-cover.png" class="img-responsive">
-            </div>
-
         </section>
 
         <section id="details">
-            <section class="row margin-left margin-right">
+            <section class="row">
 
                 <div class="column">
                     <h6> My Role </h6>
@@ -55,54 +51,41 @@
                 </div>
 
                 <div class="column">
-                    <h6> Tools </h6>
+                    <h6> Team </h6>
                     <ul>
-                        <li> Sketch, InVision
+                        <li> Engineer, Product Manager
                         </li>
                     </ul>
                 </div>
 
                 <div class="column">
-                    <h6> Skills </h6>
+                    <h6> Responsibilities </h6>
                     <ul>
-                        <li> User Research, User Flow, Wireframing
+                        <li> User Research, Interaction Design, UX/UI
                         </li>
                     </ul>
                 </div>
             </section>
         </section>
 
+        <div class="margin-bottom">
+            <img src="hero-images/cover-checkout.png" class="img-responsive">
+        </div>
 
-        <section id="process" class="margin-left margin-right">
-            <h6>Introduction</h6>
 
+        <section>
+            <!--<h6>Introduction</h6>-->
             <div class="subsection">
 
                 <h3>Background</h3>
                 <p>Udacity's mission is to democratize education through the offering of world-class higher education opportunities that are accessible, flexible, and economical. The main products are the online Nanodegree programs (ND), a project and skills-based educational credential program.</p>
-                <!--
-<p>The checkout flow for Udacity is different than typical e-commerce sites because it is providing a service not a physical product. In addition, the price point of the services are much higher than typical e-commerce products and therefore users need more time to think about a purchase. </p>
-
-<p> For this project, I was asked to redesign part of the checkout screen by adding a section that showed "bonus" items customers would receive when purchasing a ND. These items are comprehensive services such as resume reviews, one-on-one mentorship, project reviews, etc.</p>
-
-<p>While finding a solution to that, I started to rethink the entire checkout flow and realized that there is no cart in the process. Instead, a user can only purchase one product at a time. I decided to work on this problem during my free time.</p>
--->
             </div>
-
-            <!--
-<div class="subsection">
-    <h3>Business Needs and Problems</h3>
-    <p>Problem: low purchase rates through mobile web</p>
-    <p>
-        Solution: add ALL services that are included in ND course purchase (so students are informed that instead of paying $1000 for one product, they are actually getting six products) </p>
-</div>
--->
 
             <div class="subsection">
                 <h3>User Needs and Problems</h3>
-                <p>Problem: when students hit the “Enroll Now” button from the course overview page, they are taken directly to the checkout page giving them the feeling of being "rushed" to purchase. In addition, users are unsure if the product is worth the high price point.</p>
+                <p><b>Problem:</b> when students hit the “Enroll Now” button from the course overview page, they are taken directly to the checkout page giving them the feeling of being "rushed" to purchase. In addition, users are unsure if the product is worth the high price point.</p>
                 <p>
-                    Solution: improve the checkout experience by creating a cart so students don’t feel “rushed” and are able to purchase multiple items at a time. Add a section to include the services that students receive when purchasing a course to increase the value of the product. </p>
+                    <b>Solution: </b>improve the checkout experience by creating a cart so students don’t feel “rushed” and are able to purchase multiple items at a time. Add a section to include the services that students receive when purchasing a course to increase the value of the product. </p>
             </div>
 
             <div class="subsection">
@@ -114,181 +97,152 @@
                 <p> Udacity's main advantage is that we offer services such as resume review, one-on-one mentorship, project reviews, and much more. All of these services are included in the pricing of a ND. Currently, when users checkout, they don't explicitly see that they are getting those items which may be useful when trying to convert a lead.</p>
             </div>
 
-            <h6>Research</h6>
+            <!--            <h6>Research</h6>-->
+
+
             <div class="subsection">
-                <!--
-<h3>Optimizing Mobile Checkout</h3>
-<p>After doing initial research, I read that it is important to stick to industry standards when designing a checkout flow. A sense of familiarity makes users feel more comfortable and secure when buying products. In this case, we want to make sure that users feel comfortable giving the website their personal information. If they do not feel secure, this could be one reason they end up abandoning the cart. In addition, since the shopping experience is over, we need to get customers to the end and have minimal opportunities for the user to walk away. </p>
+                <h3>Current Checkout Analysis</h3>
+                <p>The current mobile checkout is just one long scroll. There is no indication of how many “steps” the process is. Breaking it up into multiple steps may help ease anxiety of a long form. The current design is optimized to get the user to the checkout stage as quickly as possible. The user is taken directly to checkout when they hit the “Enroll Now” button on an Nanodegree overview page (NDOP).
+                </p>
+                <p>The current experience does do a good job in eliminating distractions by having no ads, images, etc. It is also very simple with only two steps &mdash; sign in/up and payment.</p>
 
-<p> According to Shopify, the most important things to keep in mind when designing a checkout flow is the site being easy to understand, simple, and fast.</p>
+                <img src="projects/checkout/current-analysis.png" class="img-responsive">
+            </div>
+            <div class="subsection">
 
-<p> Studies show that in order to optimize the mobile checkout experience, it is best to breakup the process into sections so that the users can see their progress. This type of design can help eliminate anxiety in users if they see a long scroll.</p>
+                <h3>Competitive Analysis</h3>
+                <p> I compared the checkout process for two competitors: Coursera and Udemy. They actually have similar flows to Udacity. Other competitors are online master degree programs at accredited universities or colleges. Those have an application process which is the main difference between Udacity and them. The mission at Udacity is to "democratize education" by making it accessible to anyone. In addition, our price point is 10 times less than a traditional degree.
+                </p>
 
-<p>One way to speed up the process is to enable auto fill text boxes, auto skip, and auto check. It is also important to use big buttons since fingers aren’t as precise as pointers. Also, since the keyboard takes up half the screen on mobile devices, it is best to keep the text input to a minimum.</p>
-</div>
--->
+                <img src="projects/checkout/competitive-analysis.png" class="img-responsive">
 
-                <div class="subsection">
-                    <h3>Current Checkout Analysis</h3>
-                    <p>The current mobile checkout is just one long scroll. There is no indication of how many “steps” the process is. Breaking it up into multiple steps may help ease anxiety of a long form. The current design is optimized to get the user to the checkout stage as quickly as possible. The user is taken directly to checkout when they hit the “Enroll Now” button on an Nanodegree overview page (NDOP).
-                    </p>
-                    <p>The current experience does do a good job in eliminating distractions by having no ads, images, etc. It is also very simple with only two steps &mdash; sign in/up and payment.</p>
+            </div>
 
-                    <img src="projects/checkout/current-analysis.png" class="img-responsive">
-                </div>
-                <div class="subsection">
+            <!--                <h6>Ideation</h6>-->
+            <div class="subsection">
+                <h3>User Personas</h3>
+                <a href="projects/checkout/user-personas.png" target="_blank"><img src="projects/checkout/user-personas.png" class="img-responsive"></a>
+            </div>
+            <div class="subsection">
+                <h3>User Flows</h3>
+                <p> One of the main differences in my proposed flow is the addition of a cart. This enables a user to purchase multiple items at once which not only saves time but can reduce the frustration of typing in the same information multiple times. </p>
 
-                    <h3>Competitive Analysis</h3>
-                    <p> I compared the checkout process for two competitors: Coursera and Udemy. They actually have similar flows to Udacity. Other competitors are online master degree programs at accredited universities or colleges. Those have an application process which is the main difference between Udacity and them. The mission at Udacity is to "democratize education" by making it accessible to anyone. In addition, our price point is 10 times less than a traditional degree.
-                    </p>
-
-                    <!--
-<p>For Coursera, when a user clicks "Enroll Now", it takes them to a pop up where they either log in or sign up for an account. It forces the user to make an account in order to access the lesson materials. It differs from Udacity because it goes by a monthly subscription plan. After signing in/up, it takes the user to the confirmation page with the course details, payment options underneath, and checkout button. The process is very simple, straightforward and fast. However, there is no cart option and therefore the customer can only purchase one course at a time.
-</p>
-
-<p>Udemy utilizes a cart and therefore users can purchase multiple items. However, the cart has a lot of distractions including a section for "other courses you may like”. When the customer clicks “Checkout”, they are taken to a pop up where you either log in or sign up for an account (just like Coursera and Udacity). You are then taken to the cart details and payment options.
-</p>
--->
-
-                    <img src="projects/checkout/competitive-analysis.png" class="img-responsive">
-
-                    <!--
-<p>Coursera, Udemy and Udacity don’t use progress indicators in their checkout process but instead use long scrolls. All three processes are quick and simple with only two steps. Breaking these two steps down into separate pages can eliminate the need for a long scroll.</p>
-
-<p> Coursera and Udemy do not provide “bonus” items (mentorship, portfolio review, career services, etc.) in their products. This is Udacity’s opportunity to show their advantage which should be reflected in the purchase screen.
-</p>
--->
-
-                </div>
-
-                <h6>Ideation</h6>
-                <div class="subsection">
-                    <h3>User Personas</h3>
-                    <a href="projects/checkout/user-personas.png" target="_blank"><img src="projects/checkout/user-personas.png" class="img-responsive"></a>
-                </div>
-                <div class="subsection">
-                    <h3>User Flows</h3>
-                    <p> One of the main differences in my proposed flow is the addition of a cart. This enables a user to purchase multiple items at once which not only saves time but can reduce the frustration of typing in the same information multiple times. </p>
-
-                    <img src="projects/checkout/proposed-checkout-flow.png" class="img-responsive">
+                <img src="projects/checkout/proposed-checkout-flow.png" class="img-responsive">
 
 
-                </div>
+            </div>
 
-                <div class="subsection">
-                    <h3>Wireframes</h3>
-                    <p> </p>
-                    <img src="projects/checkout/checkout-wireframe.png" class="img-responsive">
-                    <img src="projects/checkout/bonus-items-wireframe.png" class="img-responsive">
+            <div class="subsection">
+                <h3>Wireframes</h3>
+                <p> </p>
+                <img src="projects/checkout/checkout-wireframe.png" class="img-responsive margin-top margin-bottom">
+                <img src="projects/checkout/bonus-items-wireframe.png" class="img-responsive">
 
-                </div>
+            </div>
 
 
-                <h6>Iterations</h6>
-                <div class="subsection">
-                    <h3> Bonus Items Explorations </h3>
-                    <a href="projects/checkout/idea1.png" target="_blank"><img src="projects/checkout/idea1.png" class="img-responsive four-column-image"></a>
+            <!--                <h6>Iterations</h6>-->
+            <div class="subsection">
+                <h3> Bonus Items Explorations </h3>
+                <a href="projects/checkout/idea1.png" target="_blank"><img src="projects/checkout/idea1.png" class="img-responsive four-column-image margin-top"></a>
 
-                    <a href="projects/checkout/idea2.png" target="_blank"><img src="projects/checkout/idea2.png" class="img-responsive four-column-image"></a>
+                <a href="projects/checkout/idea2.png" target="_blank"><img src="projects/checkout/idea2.png" class="img-responsive four-column-image"></a>
 
-                    <a href="projects/checkout/idea3.png" target="_blank"><img src="projects/checkout/idea3.png" class="img-responsive four-column-image"></a>
+                <a href="projects/checkout/idea3.png" target="_blank"><img src="projects/checkout/idea3.png" class="img-responsive four-column-image"></a>
 
-                    <a href="projects/checkout/idea4.png" target="_blank"><img src="projects/checkout/idea4.png" class="img-responsive four-column-image"></a>
+                <a href="projects/checkout/idea4.png" target="_blank"><img src="projects/checkout/idea4.png" class="img-responsive four-column-image"></a>
 
-                    <p> I experimented with multiple layouts for the “bonus" items section. I first tried listing them right underneath the ND details but that made the Order Summary section too long.</p>
+                <p> I experimented with multiple layouts for the “bonus" items section. I first tried listing them right underneath the ND details but that made the Order Summary section too long.</p>
 
-                    <p>I then tried putting them under the payment section, but realized that the logic/flow didn’t really make sense. The confirmation button would have been above it and I also thought it should be grouped with the Order Summary section since the items are related. </p>
+                <p>I then tried putting them under the payment section, but realized that the logic/flow didn’t really make sense. The confirmation button would have been above it and I also thought it should be grouped with the Order Summary section since the items are related. </p>
 
-                    <p>I went back to putting the items in a separate section under the Order Summary card, but the third layout seemed disconnected. If the user had a small browser, there was a possible chance of this section getting cut off. There would be no indication that the sections were connected or that the user should scroll. </p>
+                <p>I went back to putting the items in a separate section under the Order Summary card, but the third layout seemed disconnected. If the user had a small browser, there was a possible chance of this section getting cut off. There would be no indication that the sections were connected or that the user should scroll. </p>
 
-                    <p>I tried connecting the ND details and "bonus" items again but didn’t make a color block separation like my first idea. I explored more options and came up with my final option (below) which is implemented on the checkout site right now. On desktop, the bonus items are in the expanded view by default. However, on mobile, I created the default view as collapsed since the screen is smaller and didn't want to cause the user unnecessary scrolling if they didn't want to.
-                    </p>
+                <p>I tried connecting the ND details and "bonus" items again but didn’t make a color block separation like my first idea. I explored more options and came up with my final option (below) which is implemented on the checkout site right now. On desktop, the bonus items are in the expanded view by default. However, on mobile, I created the default view as collapsed since the screen is smaller and didn't want to cause the user unnecessary scrolling if they didn't want to.
+                </p>
 
-                    <img src="projects/checkout/bonus-items-final.png" class="img-responsive">
-                </div>
+                <img src="projects/checkout/bonus-items-final.png" class="img-responsive">
+            </div>
 
-                <div class="subsection">
-                    <h3> Payment Method Exploration </h3>
-                    <img src="projects/checkout/payment-exploration.png" class="img-responsive">
+            <div class="subsection">
+                <h3> Payment Method Exploration </h3>
+                <img src="projects/checkout/payment-exploration.png" class="img-responsive margin-top margin-bottom">
 
-                    <p> For this iteration, I explored a new payment selection design. Instead of having a traditional radio button selection, I created three buttons of the payment method themselves. When a button is selected, the corresponding payment forms will appear. </p>
+                <p> For this iteration, I explored a new payment selection design. Instead of having a traditional radio button selection, I created three buttons of the payment method themselves. When a button is selected, the corresponding payment forms will appear. </p>
 
-                    <p> After receiving feedback, I decided that using the traditional radio button method is better. This is because when users are giving personal information, they want to feel a sense of security. Seeing a familiar layout and design provides security and therefore, people will trust it. In addition, the radio buttons provide a clearer indication that they are buttons to be selected. The new explorations interaction is not as obvious.</p>
-                </div>
+                <p> After receiving feedback, I decided that using the traditional radio button method is better. This is because when users are giving personal information, they want to feel a sense of security. Seeing a familiar layout and design provides security and therefore, people will trust it. In addition, the radio buttons provide a clearer indication that they are buttons to be selected. The new explorations interaction is not as obvious.</p>
+            </div>
 
-                <div class="subsection">
-                    <h3> Account Sign In/Up Explorations</h3>
+            <div class="subsection">
+                <h3> Account Sign In/Up Explorations</h3>
 
-                    <img src="projects/checkout/account-exploration-2.png" class="img-responsive">
+                <img src="projects/checkout/account-exploration-2.png" class="img-responsive margin-top margin-bottom">
 
-                    <p> I iterated on the sign in and sign up screens to see if I could create a more continuous flow. I explored the use of a pop up log in module. However, this was distracting and took the user out of the main flow because they had to click the exit button to get out of the module. I decided to stick with the traditional method of loading a new page for either signing in or creating an account.</p>
-                </div>
+                <p> I iterated on the sign in and sign up screens to see if I could create a more continuous flow. I explored the use of a pop up log in module. However, this was distracting and took the user out of the main flow because they had to click the exit button to get out of the module. I decided to stick with the traditional method of loading a new page for either signing in or creating an account.</p>
+            </div>
 
-                <div class="subsection">
-                    <h3> Progress Indicator Explorations </h3>
-                    <img src="projects/checkout/accordion-exploration.png" class="img-responsive">
+            <div class="subsection">
+                <h3> Progress Indicator Explorations </h3>
+                <img src="projects/checkout/accordion-exploration.png" class="img-responsive margin-top margin-bottom">
 
-                    <img src="projects/checkout/progress-bar-exploration1.png" class="img-responsive">
+                <img src="projects/checkout/progress-bar-exploration1.png" class="img-responsive margin-bottom">
 
-                    <img src="projects/checkout/progress-bar-exploration2.png" class="img-responsive">
+                <img src="projects/checkout/progress-bar-exploration2.png" class="img-responsive margin-bottom">
 
-                    <p>I explored the use of an "accordion" style and two types of progress bars to help guide the customer through the checkout process. This is lacking in the current design as the flow is just one long scroll.
-                    </p>
+                <p>I explored the use of an "accordion" style and two types of progress bars to help guide the customer through the checkout process. This is lacking in the current design as the flow is just one long scroll.
+                </p>
 
-                    <p>My final iterations had the process as only two steps which showed that the "accordion" style was a bit excessive. The progress bar was much more visually friendly, took up less space, and was simple to understand.</p>
+                <p>My final iterations had the process as only two steps which showed that the "accordion" style was a bit excessive. The progress bar was much more visually friendly, took up less space, and was simple to understand.</p>
+            </div>
+
+            <!--<h6>Final Design</h6>-->
+            <div class="subsection">
+                <h3>Final Prototype</h3>
+                <p> My final iteration for the "bonus" items design includes a dropdown option that can be expanded if the users want to see which items were included in their ND purchase. The addition of this section is important because those services are the ones that distinguish Udacity from their competitors. Showing them in the checkout is a good reminder to the user of why they are choosing Udacity.</p>
+
+                <p> The cart is not implemented at the moment due to engineering and time constraints but the team is looking to revisit the proposal down the future roadmap. My proposed cart checkout flow, uses a minimal progress bar indicator of two steps. This way users can feel at ease knowing the process will be quick and simple. In the cart, it gives them the option to remove items or to add a coupon code. However, during the "Review Order" page, I do not include those options since the user is at the end of the process and I don't want them to change their mind or leave the page to find a coupon code.</p>
+
+                <div class="row">
+                    <video width="600" height="400" controls>
+                        <source src="projects/checkout/checkout-proto.mov" type="video/mp4">
+                    </video>
                 </div>
 
-                <h6>Final Design</h6>
+            </div>
+            <div class="subsection">
+                <h3>User Testing</h3>
+                <p> I tested my final prototype on four users to see if the addition of a cart significantly slowed down the checkout speed. My hypothesis is that the checkout speed will be slower when checking out with <b>one</b> item because of the addition of the cart. It adds one step to the current flow. However, I believe it will speed up the checkout time if purchasing <b>more than one</b> item.
+                </p>
+                <p>I tested four scenarios and calculated the average checkout time for each. I asked my users to pretend that they are at the checkout stage. They've done their research and have decided to enroll in the Deep Learning Nanodegree Program. I timed them to see how long it takes them to complete the checkout process with the current flow and with my proposed flow. I then asked them to repeat the process but now checkout with an additional item, the Product Design free course. <br><br>
+                    Test 1. Average speed of checkout with 1 item (current flow) - 1:12 min <br>
+                    Test 2. Average speed of checkout with 2 items (current flow) - 1:41 min <br>
+                    Test 3. Average speed of checkout with 1 item (proposed flow) - 1:15 min <br>
+                    Test 4. Average speed of checkout with 2 items (proposed flow) - 1:15 min <br>
+                </p>
+                <p> The checkout speed for purchasing one item versus more than one item in my proposed flow is the same. The added time for checkout with a cart (1:15 min) doesn't significantly slow down the current flow (1:12 min), which is only a 3 second delay. </p>
 
-                <div class="subsection">
-                    <h3>Final Prototype</h3>
-                    <p> My final iteration for the "bonus" items design includes a dropdown option that can be expanded if the users want to see which items were included in their ND purchase. The addition of this section is important because those services are the ones that distinguish Udacity from their competitors. Showing them in the checkout is a good reminder to the user of why they are choosing Udacity.</p>
+            </div>
 
-                    <p> The cart is not implemented at the moment due to engineering and time constraints but the team is looking to revisit the proposal down the future roadmap. My proposed cart checkout flow, uses a minimal progress bar indicator of two steps. This way users can feel at ease knowing the process will be quick and simple. In the cart, it gives them the option to remove items or to add a coupon code. However, during the "Review Order" page, I do not include those options since the user is at the end of the process and I don't want them to change their mind or leave the page to find a coupon code.</p>
+            <div class="subsection">
+                <h3>Reflection</h3>
+                <p> Having a cart slows down the checkout time for a single item by 3 seconds. This is a small difference which shouldn't affect the users experience. However, when purchasing multiple items, it speeds up the process by 26 seconds. The slowdown for single item purchases may be worth it if testing is conducted on the site and shows that people do want to buy multiple items.</p>
+            </div>
 
-                    <div class="row">
-                        <video width="600" height="400" controls>
-                            <source src="projects/checkout/checkout-proto.mov" type="video/mp4">
-                        </video>
-                    </div>
+            <h3>Next Steps</h3>
+            <div class="subsection">
+                <p> I would like to conduct <b>user testing</b> on the site with and without a cart to see whether or not people purchase more than one product at a time. </p>
 
-                </div>
-                <div class="subsection">
-                    <h3>User Testing</h3>
-                    <p> I tested my final prototype on four users to see if the addition of a cart significantly slowed down the checkout speed. My hypothesis is that the checkout speed will be slower when checking out with <b>one</b> item because of the addition of the cart. It adds one step to the current flow. However, I believe it will speed up the checkout time if purchasing <b>more than one</b> item.
-                    </p>
-                    <p>I tested four scenarios and calculated the average checkout time for each. I asked my users to pretend that they are at the checkout stage. They've done their research and have decided to enroll in the Deep Learning Nanodegree Program. I timed them to see how long it takes them to complete the checkout process with the current flow and with my proposed flow. I then asked them to repeat the process but now checkout with an additional item, the Product Design free course. <br><br>
-                        Test 1. Average speed of checkout with 1 item (current flow) - 1:12 min <br>
-                        Test 2. Average speed of checkout with 2 items (current flow) - 1:41 min <br>
-                        Test 3. Average speed of checkout with 1 item (proposed flow) - 1:15 min <br>
-                        Test 4. Average speed of checkout with 2 items (proposed flow) - 1:15 min <br>
-                    </p>
-                    <p> The checkout speed for purchasing one item versus more than one item in my proposed flow is the same. The added time for checkout with a cart (1:15 min) doesn't significantly slow down the current flow (1:12 min), which is only a 3 second delay. </p>
+                <p>If the data shows people want to buy multiple items, then having a cart can drastically improve the checkout speed. If the results show that people only buy one product at a time, then we can be certain that we are already maximizing our flow.</p>
 
-                </div>
+                <p> I believe that testing is very important in order to inform the next steps on how to optimize the checkout process.
+                </p>
+            </div>
 
-                <div class="subsection">
-                    <h3>Takeaways</h3>
-                    <p> Having a cart slows down the checkout time for a single item by 3 seconds. This is a small difference which shouldn't affect the users experience. However, when purchasing multiple items, it speeds up the process by 26 seconds. The slowdown for single item purchases may be worth it if testing is conducted on the site and shows that people do want to buy multiple items.</p>
-                </div>
-
-                <h6>Next Steps</h6>
-                <div class="subsection">
-                    <p> I would like to conduct <b>user testing</b> on the site with and without a cart to see whether or not people purchase more than one product at a time. </p>
-
-                    <p>If the data shows people want to buy multiple items, then having a cart can drastically improve the checkout speed. If the results show that people only buy one product at a time, then we can be certain that we are already maximizing our flow.</p>
-
-                    <p> I believe that testing is very important in order to inform the next steps on how to optimize the checkout process.
-                    </p>
-                </div>
-
+            <!--process-->
 
         </section>
-        <!--process-->
-
+        <!--main-->
     </section>
-    <!--main-->
-
 
     <footer>
         <p>nickipadar@gmail.com <br> linkedin.com/in/nicki-padar <br> © 2019 Nicki Padar </p>

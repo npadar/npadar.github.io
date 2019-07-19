@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nicki Padar &mdash; Portfolio </title>
+    <meta name="description" content="Nicki Padar Portfolio">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="nav">
+        <header id="header" class="shadow">
+            <a class="logo" href="index.html">Nicki Padar</a>
+            <nav class="navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html">Design</a></li>
+                    <li><a href="photos.html">Photography</a></li>
+                    <li><a href="Nicki-Padar-resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <section id="main" class="margin-left margin-right">
+        <section id="intro" class="row">
+            <div>
+                <h6>Product Design</h6>
+                <h1> Profile Image Upload</h1>
+                <p> Creating engagement in Student Hub, the online student community.
+                </p>
+            </div>
+        </section>
+
+        <section id="details">
+            <section class="row">
+
+                <div class="column">
+                    <h6> My Role </h6>
+                    <ul>
+                        <li> Product Designer </li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h6> Timeline </h6>
+                    <ul>
+                        <li> Jun. 2019 - Jul. 2019 </li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h6> Team </h6>
+                    <ul>
+                        <li> Engineer, Product Manager
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h6> Responsibilities </h6>
+                    <ul>
+                        <li> Visual Design, Interaction Design, UX/UI </li>
+
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <div class="margin-bottom">
+            <img src="hero-images/cover-avatar.png" class="img-responsive">
+        </div>
+
+
+        <section>
+            <!--<h6>Introduction</h6>-->
+            <div class="subsection">
+
+                <h3>Background</h3>
+                <p> In Student Hub, there is a low rate of students who upload a profile picture. The assumption is that by having a profile picture, it can lend to the appearance of an actively engaging chat platform to influence contribution. The Community team has identified this a high priority feature based on direct experience in prior online communities.</p>
+            </div>
+
+            <div class="subsection">
+                <h3>Pain Points</h3>
+                <p>Currently, users can only upload a profile picture through Student Hub. By default, they are given a generic, colored identicon to help distinguish individuals. Through user testing, we found that students had a hard time with the discoverability of the image upload. The users have to go through a complicated and inconvenient flow which makes it not worth their time to upload a photo.
+                </p>
+                <img src="projects/avatar/current-flow.png" class="img-responsive margin-bottom margin-top">
+                <p>Here is an example of a community channel called 30 Days of Udacity which is our top performing community channel. Only about 20% of the room participants have a profile picture uploaded. The scarcity of real photos is visually striking.</p>
+                <img src="projects/avatar/before.png" class="img-responsive margin-top">
+            </div>
+
+            <div class="subsection">
+                <h3>Objective</h3>
+                <p>The main goal of this feature is to improve the discoverability for uploading a profile picture by adding it to the Welcome flow and Settings page. In addition, I had the idea to allow users to quickly create a customized avatar in the cases where users are not comfortable uploading an image of themselves. </p>
+                <p><b>Welcome flow:</b> Encourage new students to upload a profile picture and set their location during their onboarding process in the welcome flow. This action will help give a sense of personalization through profile building.</p>
+
+                <p> <b>Settings page:</b> Allow students to upload a profile picture and edit their location in their settings page. This will update automatically in Student Hub, Career portal and the EMC (enterprise).
+                </p>
+                <img src="projects/avatar/proposed-flow.png" class="img-responsive margin-top">
+            </div>
+
+            <div class="subsection">
+                <h3>Target Users</h3>
+                <p>The primary audiences for this feature are current and new students of Udacity. </p>
+
+                <p>Let's say a hypothetical student named Amy just signed up for the Digital Marketing Nanodegree program. She is taken to the classroom and is prompted to go through the welcome flow. She gets to the profile image upload screen and picks her favorite image of herself to upload. If however, she decided to skip that step, she would receive a notification in the classroom to remind her to upload a photo.</p>
+
+                <p>On the other hand, Laura is currently enrolled in the Business Analyst Nanodegree program. She is about halfway through the course when she receives a notification that her profile image isn't updated. She then sees this new feature, goes into her settings, and uploads an image.</p>
+
+                <p>The main goals for users are: to be connected with other students who are taking the same course as them and to communicate with their mentor and Udacity staff.
+                </p>
+
+            </div>
+
+            <!--            <h6>Ideation</h6>-->
+            <div class="subsection">
+                <h3>Brainstorm</h3>
+                <p> I began by sketching out some initial ideas for how the layout in the welcome flow could look. My idea was to then use this same layout in the settings page to ensure consistency throughout the entire product. After sketching, I then began creating some low fidelity mockups which I would then use to start building out the final visual design.</p>
+
+                <img src="projects/avatar/sketch.png" class="img-responsive margin-bottom margin-top">
+                <img src="projects/avatar/low-fid.png" class="img-responsive">
+            </div>
+
+
+            <!--            <h6>Iterations</h6>-->
+            <div class="subsection">
+                <h3>Explorations</h3>
+
+                <p> I went through several rounds of feedback with other product designers, PM's, and engineers to ensure that the flow and interactions were intuitive and created a good user experience. Instead of using randomly generated identicons as a default image, I thought that using student initials could be a better solution.</p>
+                <p>My initial idea was to have two options for students to choose from: either uploading an image or creating their own personalized avatar. In this exploration, I created a two column layout where users can use the radio button to select which option they would like. Some feedback I received was that having two separate image "previews" was confusing and takes up a lot of UI space. Also, that when selecting a color, they expected the background color to change but instead the icon color changed.</p>
+                <img src="projects/avatar/avatar-idea1.png" class="img-responsive margin-bottom margin-top">
+                <p>For my next iteration, I created a single image preview and explored using a tab layout to create a cleaner UI. However, I received feedback that the tab layout hides information from the user and that having two options side by side creates a better experience.</p>
+
+                <img src="projects/avatar/avatar-idea2.png" class="img-responsive margin-bottom margin-top">
+                <p>I then iterated on my original design of having two columns side by side and created a single image preview area. I wanted to further explore the need for the "drag and drop" interaction by researching other products that use this. </p>
+                <img src="projects/avatar/avatar-idea3.png" class="img-responsive margin-top">
+            </div>
+            <div class="subsection">
+                <h3>Constraints</h3>
+                <p> After getting feedback from engineering, I realized there were some constraints I would need to think through. </p>
+
+                <p>Using user initials would be a problem because if there were two students with the same initials, there would be no distinguishing factor on who is who. In Student Hub, the chat names are arranged in alphabetical order with the students first name and last initial. For example, if there was a student named "Amy Ryan" and another student named "Amy Ribar", they would both appear as Amy R. in the chat. Therefore, the identicon is still the best solution to have unique images for each student.</p>
+
+                <p>Letting students create customized avatars poses a similar problem. My idea was to have students pick from eight different colors and eight different icons. This however would only allow for 64 unique different variations with a high probability that users would create the same avatar and therefore would encounter the same problem of not being able to distinguish who is who. </p>
+
+                <p>We still want to create a feature like this so that students can have fun being creative and also feel a sense of personalization in the product. We decided to launch this feature as a V2 and have just a photo upload launch as a MVP.</p>
+
+            </div>
+
+            <!--<h6>Final Design</h6>-->
+            <div class="subsection">
+                <h3>Prototype</h3>
+                <p> For my final prototype, I added an image crop into the flow for students to adjust their picture. Students can use the zoom feature to adjust the frame as well. </p>
+
+                <img src="projects/avatar/welcome-mock.png" class="img-responsive margin-top">
+                <img src="projects/avatar/welcome-flow-upload-crop.png" class="img-responsive margin-top">
+                <img src="projects/avatar/welcome-flow-tooltip.png" class="img-responsive margin-top">
+                <img src="projects/avatar/settings-mock.png" class="img-responsive margin-top">
+                <img src="projects/avatar/mobile-mock.png" class="img-responsive margin-top">
+                <div class="row">
+                    <video width="600" height="400" controls>
+                        <source src="projects/avatar/avatar-proto.mov" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="subsection">
+                <h3>Metrics</h3>
+                <p> In order to notify current students that there was an update to the Settings page, I created a notification message in their classroom. This feature just launched so I am still waiting for data to measure the results of this update. </p>
+                <img src="projects/avatar/complete-touchpoints.png" class="img-responsive margin-top margin-bottom">
+
+                <p>My hypothesis is that I will see a 30% increase in profile pictures uploaded. This in turn will result in more peer-to-peer messages being exchanged. Stay tuned for more updates as they come in!
+                </p>
+            </div>
+
+            <!--
+<div class="subsection">
+    <h3>Reflection</h3>
+    <p> The results show that student images help create connections and humanize the product experience. Compared to an in person classroom, it is difficult to recreate that same sense of camaraderie, humanness, and engagement via an online classroom. By improving the discoverability of uploading a profile picture, students are able to bridge the engagement gap of online peer-to-peer communication by putting a face behind words. </p>
+</div>
+-->
+
+            <div class="subsection">
+                <h3>Next Steps</h3>
+                <p> Brainstorm ideas on how I can create a customized avatar experience that would allow for unique variations for each student. Continue to get student feedback about what keeps them engaged and moving forward in a course. </p>
+            </div>
+
+        </section>
+        <!--process-->
+
+    </section>
+    <!--main-->
+
+
+    <footer>
+        <p>nickipadar@gmail.com <br> linkedin.com/in/nicki-padar <br> © 2019 Nicki Padar </p>
+    </footer>
+</body>
+
+</html>
