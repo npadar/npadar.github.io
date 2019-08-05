@@ -89,11 +89,9 @@ h3 {
 }
 
 h4 {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 19px;
-    margin-left: 20%;
-    width: 80%;
     margin-top: 0;
 }
 
@@ -132,14 +130,15 @@ p {
     text-align: center;
 }
 
+
 /*desktop*/
 @media screen and (min-width:1043px) {
     .margin-left {
-        margin-left: 300px;
+        margin-left: 325px;
     }
 
     .margin-right {
-        margin-right: 300px;
+        margin-right: 325px;
     }
 
     .margin-bottom {
@@ -151,20 +150,21 @@ p {
 
     }
 
+
     /*
     .intro-left {
         float: left;
-        width: 50%;
+        width: 30%;
+    }
+
+
+
+    .intro-right {
+        float: right;
+        width: 65%;
     }
 */
 
-    /*
-    .intro-right {
-        float: right;
-        width: 100%;
-        margin-top: 20px;
-    }
-*/
     /*
 
     .home-left {

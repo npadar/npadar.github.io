@@ -78,12 +78,16 @@
             <div class="subsection">
 
                 <h3>Background</h3>
-                <p> In Student Hub, there is a low rate of students who upload a profile picture. The assumption is that by having a profile picture, it can lend to the appearance of an actively engaging chat platform to influence contribution. The Community team has identified this a high priority feature based on direct experience in prior online communities.</p>
+                <p> Student Hub is the chat platform that Udacity students use to communicate with other students and their mentor. It improves learning by providing an environment where students can collaborate with each other.
+                </p>
+                <p> Currently in Student Hub, there is a low rate of students who upload a profile picture. The assumption is that by having a profile picture, it can lend to the appearance of an actively engaging chat platform to influence contribution. The Community team has identified this a high priority feature based on direct experience in prior online communities.</p>
             </div>
 
             <div class="subsection">
                 <h3>Pain Points</h3>
-                <p>Currently, users can only upload a profile picture through Student Hub. By default, they are given a generic, colored identicon to help distinguish individuals. Through user testing, we found that students had a hard time with the discoverability of the image upload. The users have to go through a complicated and inconvenient flow which makes it not worth their time to upload a photo.
+                <p>Very little people upload profile pictures. This is an opportunity for design because the discoverability for the current way is not clear; so we need to make it easy to find and do.</p>
+                <p> <b>Hypothesis 1:</b> having more profile pictures could increase engagement because you’re seeing real faces.<br>
+                    <b>Hypothesis 2:</b> when more people have their actual faces, it feels like more of a welcoming community.
                 </p>
                 <img src="projects/avatar/current-flow.png" class="img-responsive margin-bottom margin-top">
                 <p>Here is an example of a community channel called 30 Days of Udacity which is our top performing community channel. Only about 20% of the room participants have a profile picture uploaded. The scarcity of real photos is visually striking.</p>
@@ -92,7 +96,7 @@
 
             <div class="subsection">
                 <h3>Objective</h3>
-                <p>The main goal of this feature is to improve the discoverability for uploading a profile picture by adding it to the Welcome flow and Settings page. In addition, I had the idea to allow users to quickly create a customized avatar in the cases where users are not comfortable uploading an image of themselves. </p>
+                <p>The objective is to encourage profile picture upload because I believe it can improve engagement in Student Hub, which in result, improves learning. In addition, I had the idea to allow users to quickly create a customized avatar in the cases where users are not comfortable uploading an image of themselves. My idea is to explore two touchpoints.</p>
                 <p><b>Welcome flow:</b> Encourage new students to upload a profile picture and set their location during their onboarding process in the welcome flow. This action will help give a sense of personalization through profile building.</p>
 
                 <p> <b>Settings page:</b> Allow students to upload a profile picture and edit their location in their settings page. This will update automatically in Student Hub, Career portal and the EMC (enterprise).
@@ -100,18 +104,20 @@
                 <img src="projects/avatar/proposed-flow.png" class="img-responsive margin-top">
             </div>
 
-            <div class="subsection">
-                <h3>Target Users</h3>
-                <p>The primary audiences for this feature are current and new students of Udacity. </p>
+            <!--
+<div class="subsection">
+    <h3>Target Users</h3>
+    <p>The primary audiences for this feature are current and new students of Udacity. </p>
 
-                <p>Let's say a hypothetical student named Amy just signed up for the Digital Marketing Nanodegree program. She is taken to the classroom and is prompted to go through the welcome flow. She gets to the profile image upload screen and picks her favorite image of herself to upload. If however, she decided to skip that step, she would receive a notification in the classroom to remind her to upload a photo.</p>
+    <p>Let's say a hypothetical student named Amy just signed up for the Digital Marketing Nanodegree program. She is taken to the classroom and is prompted to go through the welcome flow. She gets to the profile image upload screen and picks her favorite image of herself to upload. If however, she decided to skip that step, she would receive a notification in the classroom to remind her to upload a photo.</p>
 
-                <p>On the other hand, Laura is currently enrolled in the Business Analyst Nanodegree program. She is about halfway through the course when she receives a notification that her profile image isn't updated. She then sees this new feature, goes into her settings, and uploads an image.</p>
+    <p>On the other hand, Laura is currently enrolled in the Business Analyst Nanodegree program. She is about halfway through the course when she receives a notification that her profile image isn't updated. She then sees this new feature, goes into her settings, and uploads an image.</p>
 
-                <p>The main goals for users are: to be connected with other students who are taking the same course as them and to communicate with their mentor and Udacity staff.
-                </p>
+    <p>The main goals for users are: to be connected with other students who are taking the same course as them and to communicate with their mentor and Udacity staff.
+    </p>
 
-            </div>
+</div>
+-->
 
             <!--            <h6>Ideation</h6>-->
             <div class="subsection">
@@ -128,21 +134,32 @@
                 <h3>Explorations</h3>
 
                 <p> I went through several rounds of feedback with other product designers, PM's, and engineers to ensure that the flow and interactions were intuitive and created a good user experience. Instead of using randomly generated identicons as a default image, I thought that using student initials could be a better solution.</p>
+                <h4>Iteration 1</h4>
                 <p>My initial idea was to have two options for students to choose from: either uploading an image or creating their own personalized avatar. In this exploration, I created a two column layout where users can use the radio button to select which option they would like. Some feedback I received was that having two separate image "previews" was confusing and takes up a lot of UI space. Also, that when selecting a color, they expected the background color to change but instead the icon color changed.</p>
-                <img src="projects/avatar/avatar-idea1.png" class="img-responsive margin-bottom margin-top">
+                <img src="projects/avatar/welcome-flow-avatar-idea-1.png" class="img-responsive margin-bottom margin-top">
+                <h4>Iteration 2</h4>
                 <p>For my next iteration, I created a single image preview and explored using a tab layout to create a cleaner UI. However, I received feedback that the tab layout hides information from the user and that having two options side by side creates a better experience.</p>
 
-                <img src="projects/avatar/avatar-idea2.png" class="img-responsive margin-bottom margin-top">
+                <img src="projects/avatar/welcome-flow-avatar-idea-2.png" class="img-responsive margin-bottom margin-top">
+                <h4>Iteration 3</h4>
                 <p>I then iterated on my original design of having two columns side by side and created a single image preview area. I wanted to further explore the need for the "drag and drop" interaction by researching other products that use this. </p>
-                <img src="projects/avatar/avatar-idea3.png" class="img-responsive margin-top">
+                <img src="projects/avatar/welcome-flow-avatar-idea-3.png" class="img-responsive margin-top">
             </div>
             <div class="subsection">
                 <h3>Constraints</h3>
                 <p> After getting feedback from engineering, I realized there were some constraints I would need to think through. </p>
 
+                <p><b>1. User initials</b><br> Using user initials would be a problem because if there were two students with the same initials, there would be no distinguishing factor on who is who.
+                </p>
+                <p>
+                    <b>2. Avatar</b> <br>Letting students create customized avatars poses a similar problem. My idea would only allow for 64 unique variations.
+                </p>
+
+                <!--
                 <p>Using user initials would be a problem because if there were two students with the same initials, there would be no distinguishing factor on who is who. In Student Hub, the chat names are arranged in alphabetical order with the students first name and last initial. For example, if there was a student named "Amy Ryan" and another student named "Amy Ribar", they would both appear as Amy R. in the chat. Therefore, the identicon is still the best solution to have unique images for each student.</p>
 
                 <p>Letting students create customized avatars poses a similar problem. My idea was to have students pick from eight different colors and eight different icons. This however would only allow for 64 unique different variations with a high probability that users would create the same avatar and therefore would encounter the same problem of not being able to distinguish who is who. </p>
+-->
 
                 <p>We still want to create a feature like this so that students can have fun being creative and also feel a sense of personalization in the product. We decided to launch this feature as a V2 and have just a photo upload launch as a MVP.</p>
 
